@@ -1,0 +1,31 @@
+
+@import '../variables.css';
+
+.root {
+  background: #fff;
+  color: #000;
+  margin-top: 35px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px 15px;
+  max-width: var(--max-content-width);
+  text-align: center;
+}
+
+.link {
+  padding: 5px 30px;
+  font-family: Lato;
+  font-size: 12.00pt;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: rgb(0,0,0);
+  line-height: 15.84pt;
+  letter-spacing: normal;
+}
+
+.link:hover {
+  background-color: rgba(205, 222, 232, 0.99);  
+}

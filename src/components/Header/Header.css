@@ -1,0 +1,14 @@
+
+@import '../variables.css';
+
+.root {
+  background: #fff;
+  color: #000;
+}
+
+.container {
+  margin: 13px auto;
+  padding: 20px 0;
+  max-width: var(--max-content-width);
+}
+
