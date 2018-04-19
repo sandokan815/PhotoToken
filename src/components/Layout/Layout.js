@@ -7,9 +7,7 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import normalizeCss from 'normalize.css';
 import s from './Layout.css';
 import Header from '../Header';
-import Feedback from '../Feedback';
 import Footer from '../Footer';
-import Home from '../Home';
 
 class Layout extends React.Component {
   static propTypes = {
@@ -20,7 +18,7 @@ class Layout extends React.Component {
     return (
       <div>
         <Header />
-        <Home />
+        {this.props.children}
         <Footer />
       </div>
     );
