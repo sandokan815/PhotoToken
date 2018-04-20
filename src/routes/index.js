@@ -13,14 +13,14 @@ const routes = {
       path: '/auction',
       load: () => import(/* webpackChunkName: 'auction' */ './auction'),
     },
-    // {
-    //   path: '/marketplace',
-    //   load: () => import(/* webpackChunkName: 'login' */ './marketplace'),
-    // },
-    // {
-    //   path: '/faq',
-    //   load: () => import(/* webpackChunkName: 'register' */ './faq'),
-    // },
+    {
+      path: '/marketplace',
+      load: () => import(/* webpackChunkName: 'marketplace' */ './marketplace'),
+    },
+    {
+      path: '/faq',
+      load: () => import(/* webpackChunkName: 'register' */ './faq'),
+    },
     {
       path: '/about',
       load: () => import(/* webpackChunkName: 'about' */ './about'),
