@@ -10,7 +10,7 @@ function action() {
     title,
     component: (
       <Layout>
-        <MarketPlace title={title} />
+        <MarketPlace />
       </Layout>
     ),
   };
