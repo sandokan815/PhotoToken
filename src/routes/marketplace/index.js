@@ -1,19 +1,20 @@
 import React from 'react';
-import Home from './Home';
 import Layout from '../../components/Layout';
+import MarketPlace from './MarketPlace';
 
-const title = 'Home';
+const title = 'Marketplace';
 
 function action() {
   return {
-    chunks: ['home'],
+    chunks: ['marketplace'],
     title,
     component: (
       <Layout>
-        <Home />
+        <MarketPlace />
       </Layout>
     ),
   };
 }
 
 export default action;
+

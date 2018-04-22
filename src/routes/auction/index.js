@@ -1,17 +1,17 @@
 import React from 'react';
-import Home from './Home';
 import Layout from '../../components/Layout';
+import Auction from './Auction';
 
-const title = 'Home';
+const title = 'Auction';
 
 function action() {
   return {
-    chunks: ['home'],
-    title,
+  	chunks: ['auction'],
+  	title,
     component: (
-      <Layout>
-        <Home />
-      </Layout>
+    	<Layout>
+    		<Auction />
+    	</Layout>
     ),
   };
 }

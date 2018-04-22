@@ -1,16 +1,15 @@
 import React from 'react';
-import Home from './Home';
 import Layout from '../../components/Layout';
-
-const title = 'Home';
+import Page from '../../components/Page';
+import faq from './faq.md';
 
 function action() {
   return {
-    chunks: ['home'],
-    title,
+    chunks: ['faq'],
+    title: faq.title,
     component: (
       <Layout>
-        <Home />
+        <Page {...faq} />
       </Layout>
     ),
   };

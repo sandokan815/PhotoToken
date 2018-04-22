@@ -1,16 +1,16 @@
 import React from 'react';
-import Home from './Home';
 import Layout from '../../components/Layout';
+import SinglePhoto from './singlephoto';
 
-const title = 'Home';
+const title = 'Single-Photo';
 
 function action() {
   return {
-    chunks: ['home'],
+    chunks: ['singlephoto'],
     title,
     component: (
       <Layout>
-        <Home />
+        <SinglePhoto />
       </Layout>
     ),
   };

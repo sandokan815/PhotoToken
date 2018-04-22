@@ -7,14 +7,13 @@
   font-family: Lato;
   display: inline-block;
   padding: 7px 15px;
-  text-decoration: none;
+  text-decoration: none !important;;
   font-size: 12.00pt;
   font-weight: 400;
   font-style: normal;
-  color: #000;
+  color: #000 !important;;
   line-height: 15.84pt;
   letter-spacing: normal;
-
 }
 .about {
   font-family: Lato;
@@ -31,5 +30,6 @@
 .about:hover,
 .link:hover {
   background-color: rgba(205, 222, 232, 0.99);
+  color: #000 !important;
+  text-decoration: none !important;
 }
-
