@@ -1,0 +1,32 @@
+.dropdown-menu {
+  background-color: transparent !important;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  min-width: 185px !important;
+  text-align: center !important;
+  padding: 0 !important;
+}
+
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+  color: #262626;
+  text-decoration: none;
+  background-color: rgba(205, 222, 232, 0.99) !important;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #000 !important;
+  font-weight: 400 !important;
+  display: inline-block;
+  font-size: 12pt;
+  line-height: 15.84pt;
+}
+
+.navbar-default .navbar-nav > .open > a {
+  background-color: transparent !important;
+}
+
+.navbar-default .navbar-nav > .open > a:hover {
+  background-color: rgba(205, 222, 232, 0.99) !important;
+}
