@@ -1,4 +1,3 @@
-
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Header.css';
@@ -12,8 +11,7 @@ class Header extends React.Component {
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <Navigation />
-          <Link className={s.brand} to="/">
+          <Link to="/">
             <img
               src={logoUrl}
               srcSet={`${logoUrl2x} 2x`}
@@ -22,6 +20,7 @@ class Header extends React.Component {
               alt="PhotoToken"
             />
           </Link>
+          <Navigation />
         </div>
       </div>
     );

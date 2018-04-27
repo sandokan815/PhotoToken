@@ -1,4 +1,3 @@
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import serialize from 'serialize-javascript';
@@ -41,6 +40,7 @@ class Html extends React.Component {
           ))}
           <link rel="manifest" href="/site.webmanifest" />
           <link rel="apple-touch-icon" href="/icon.png" />
+
           {styles.map(style => (
             <style
               key={style.id}
@@ -48,6 +48,7 @@ class Html extends React.Component {
               dangerouslySetInnerHTML={{ __html: style.cssText }}
             />
           ))}
+          <link rel="stylesheet" href="/style.css" />
         </head>
         <body>
           <div id="app" dangerouslySetInnerHTML={{ __html: children }} />

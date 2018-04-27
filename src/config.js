@@ -21,15 +21,17 @@ module.exports = {
 
   // https://expressjs.com/en/guide/behind-proxies.html
   trustProxy: process.env.TRUST_PROXY || 'loopback',
+  // trustProxy: '0.0.0.0',
 
   // API Gateway
   api: {
     // API URL to be used in the client-side code
     clientUrl: process.env.API_CLIENT_URL || '',
     // API URL to be used in the server-side code
-    serverUrl:
-      process.env.API_SERVER_URL ||
-      `http://localhost:${process.env.PORT || 3000}`,
+    // serverUrl:
+    //   process.env.API_SERVER_URL ||
+    //   `http://localhost:${process.env.PORT || 3000}`,
+    serverUrl: '50.28.18.34:3000',
   },
 
   // Database

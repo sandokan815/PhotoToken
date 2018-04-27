@@ -1,35 +1,43 @@
 .root {
   float: right;
-  margin: 20px 60px;
+  margin: 0 22%;
+}
+
+.menuBar {
+  margin-top: 15px;
+  background-color: white !important;
+  border-color: white !important;
+  font-family: 'Lato';
 }
 
 .link {
-  font-family: Lato;
   display: inline-block;
-  padding: 7px 15px;
-  text-decoration: none !important;;
-  font-size: 12.00pt;
+  font-size: 12pt;
   font-weight: 400;
-  font-style: normal;
-  color: #000 !important;;
+  color: #000 !important;
   line-height: 15.84pt;
-  letter-spacing: normal;
+  cursor: pointer;
 }
+
 .about {
-  font-family: Lato;
-  display: inline-block;
-  text-decoration: none;
-  font-size: 12.00pt;
+  font-size: 12pt;
   font-weight: 400;
   font-style: normal;
   color: #000;
   line-height: 15.84pt;
-  letter-spacing: normal;
-  padding: 7px 35px;
+  padding: 0 25px;
 }
+
 .about:hover,
 .link:hover {
-  background-color: rgba(205, 222, 232, 0.99);
+  background-color: rgba(205, 222, 232, 0.99) !important;
   color: #000 !important;
   text-decoration: none !important;
+}
+
+.about:focus,
+.link:focus {
+  background-color: transparent;
+  color: #000;
+  text-decoration: none;
 }

@@ -17,15 +17,19 @@
 .link {
   padding: 5px 30px;
   font-family: Lato;
-  font-size: 12.00pt;
+  font-size: 12pt;
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
-  color: rgb(0,0,0);
   line-height: 15.84pt;
   letter-spacing: normal;
+  background-color: transparent;
+  color: #000;
 }
 
-.link:hover {
-  background-color: rgba(205, 222, 232, 0.99);  
+.link:hover,
+.link:focus {
+  background-color: rgba(205, 222, 232, 0.99);
+  text-decoration: none;
+  color: #000;
 }

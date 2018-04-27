@@ -10,5 +10,7 @@
   margin: 13px auto;
   padding: 20px 0;
   max-width: var(--max-content-width);
+  display: flex;
+  justify-content: space-between;
 }
 

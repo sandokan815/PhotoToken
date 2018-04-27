@@ -16,7 +16,7 @@ const routes = {
     },
     {
       path: '/faq',
-      load: () => import(/* webpackChunkName: 'register' */ './faq'),
+      load: () => import(/* webpackChunkName: 'faq' */ './faq'),
     },
     {
       path: '/about',
@@ -37,7 +37,7 @@ const routes = {
     {
       path: '/singlephoto',
       load: () => import(/* webpackChunkName: 'singlephoto' */ './singlephoto'),
-    }
+    },
   ],
 
   async action({ next }) {
