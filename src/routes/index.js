@@ -38,6 +38,10 @@ const routes = {
       path: '/singlephoto',
       load: () => import(/* webpackChunkName: 'singlephoto' */ './singlephoto'),
     },
+    {
+      path: '/myphoto',
+      load: () => import(/* webpackChunkName: 'myphoto' */ './myphoto'),
+    },
   ],
 
   async action({ next }) {

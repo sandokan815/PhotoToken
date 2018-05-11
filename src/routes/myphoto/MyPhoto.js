@@ -2,15 +2,15 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import s from './MarketPlace.css';
+import s from './MyPhoto.css';
 import placeholder from '../assets/placeholder.png';
 
-class MarketPlace extends React.Component {
+class MyPhoto extends React.Component {
   render() {
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <div className={s.title}>Marketplace</div>
+          <div className={s.title}>MyPhotos</div>
           <Row className={s.row}>
             <Col md={4}>
               <div className={s.photoPosition}>
@@ -127,4 +127,4 @@ class MarketPlace extends React.Component {
   }
 }
 
-export default withStyles(bootstrap, s)(MarketPlace);
+export default withStyles(bootstrap, s)(MyPhoto);

@@ -3,9 +3,6 @@ import { Nav, NavDropdown, MenuItem, NavItem, Navbar } from 'react-bootstrap';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
 import s from './Navigation.css';
-import Link from '../Link';
-
-// import ActiveDropdown from 'react-bootstrap-navdropdown-active';
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -20,6 +17,7 @@ class Navigation extends React.Component {
   handleClose = () => {
     this.setState({ isOpen: false });
   };
+  handleToggle = () => {};
 
   render() {
     return (
@@ -28,46 +26,27 @@ class Navigation extends React.Component {
           <Nav>
             <NavDropdown
               title="Auction"
-              id="basic-nav-dropdown"
+              id="basic-nav-dropDown"
               onMouseEnter={this.handleOpen}
               onMouseLeave={this.handleClose}
               open={this.state.isOpen}
+              onToggle={this.handleToggle}
               noCaret
             >
-              <MenuItem>
-                <Link className={s.link} to="/auction">
-                  Auction
-                </Link>
-              </MenuItem>
-              <MenuItem>
-                <Link className={s.link} to="/singlePhoto">
-                  Single-photo
-                </Link>
-              </MenuItem>
+              <MenuItem href="/auction">Auction</MenuItem>
+              <MenuItem href="/singlePhoto">Single-photo</MenuItem>
             </NavDropdown>
-            <NavItem className={s.link}>
-              <Link className={s.link} to="/marketplace">
-                {' '}
-                Marketplace{' '}
-              </Link>
+            <NavItem className={s.link} href="/marketplace">
+              Marketplace
             </NavItem>
-            <NavItem className={s.link}>
-              <Link className={s.link} to="/faq">
-                {' '}
-                FAQ{' '}
-              </Link>
+            <NavItem className={s.link} href="/faq">
+              FAQ
             </NavItem>
-            <NavItem className={s.about}>
-              <Link className={s.link} to="/about">
-                {' '}
-                About{' '}
-              </Link>
+            <NavItem className={s.about} href="/about">
+              About
             </NavItem>
-            <NavItem className={s.link}>
-              <Link className={s.link} to="/login">
-                {' '}
-                Login{' '}
-              </Link>
+            <NavItem className={s.link} href="/login">
+              Login
             </NavItem>
           </Nav>
         </Navbar>
