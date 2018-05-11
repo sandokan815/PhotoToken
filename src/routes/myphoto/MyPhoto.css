@@ -1,0 +1,64 @@
+.root {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 0 40px;
+  max-width: 820px;
+  font-family: Lato;
+  font-style: normal;
+  text-decoration: none;
+  letter-spacing: normal;
+}
+
+.title {
+  font-size: 18.75pt;
+  font-weight: 300;
+  color: rgb(128, 128, 128);
+  line-height: 22.5pt;
+  margin: 35px 15px;
+}
+
+.photoPosition {
+  margin: 0 15px;
+}
+
+.content {
+  font-size: 10.5pt;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  line-height: 21.42pt;
+  margin: 25px 15px;
+}
+
+button {
+  border: 1px solid rgb(192, 192, 192);
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  overflow: hidden;
+  outline: 0;
+  width: 148px;
+  height: 40px;
+}
+
+.button {
+  font-size: 12pt;
+  font-weight: 400;
+  color: rgb(128, 128, 128);
+  line-height: 14.4pt;
+  text-indent: 0;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: rgb(192, 192, 192);
+  border-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.row {
+  margin: 7% -15px;
+}

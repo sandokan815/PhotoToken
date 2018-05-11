@@ -1,21 +1,16 @@
 import React from 'react';
 import Layout from '../../components/Layout';
-import Admin from './Admin';
+import MyPhoto from './MyPhoto';
 
-const title = 'Admin Page';
-const isAdmin = false;
+const title = 'Marketplace';
 
 function action() {
-  if (!isAdmin) {
-    return { redirect: '/login' };
-  }
-
   return {
-    chunks: ['admin'],
+    chunks: ['myphoto'],
     title,
     component: (
       <Layout>
-        <Admin title={title} />
+        <MyPhoto />
       </Layout>
     ),
   };
