@@ -1,0 +1,186 @@
+import avatarImage from '../assets/dumy.jpg';
+
+const metaData = [
+  {
+    imageUrl: avatarImage,
+    seller: 'Hossein123',
+    subject: 'Alfred Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Pavel123',
+    subject: 'Blfred Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Bossein123',
+    subject: 'Clfred Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Justin123',
+    subject: 'Dlfred Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Mark123',
+    subject: 'Flfred Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Bill123',
+    subject: 'Hlfred Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Messi123',
+    subject: 'Ylfred Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Rhino123',
+    subject: 'Mlfred Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Ronaldo123',
+    subject: 'Klfred Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Suares123',
+    subject: 'Tlfred Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Neimar123',
+    subject: 'Olfred Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Ronaldiho123',
+    subject: 'Plfred Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Zidan123',
+    subject: 'Bomb Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Ozil123',
+    subject: 'Orange Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Muler123',
+    subject: 'Drop Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Savi123',
+    subject: 'Alfred Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Alonxa123',
+    subject: 'Sandokan Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Casilas123',
+    subject: 'Cool Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Ramos123',
+    subject: 'Ox Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Hossein123',
+    subject: 'Ryan Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Yasin123',
+    subject: 'Cow Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Beckam123',
+    subject: 'Pig Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Alexander123',
+    subject: 'Dog Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Cal123',
+    subject: 'Cat Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Close123',
+    subject: 'Wolf Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Iguain123',
+    subject: 'Fox Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Maradona123',
+    subject: 'Rabbit Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Pele123',
+    subject: 'Woolf Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Kaka123',
+    subject: 'Wlfred Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+  {
+    imageUrl: avatarImage,
+    seller: 'Adriano123',
+    subject: 'Qlfred Hitchcock',
+    photographer: 'Dan Wynn',
+  },
+];
+
+export default metaData;

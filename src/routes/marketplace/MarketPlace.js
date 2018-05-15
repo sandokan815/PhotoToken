@@ -1,9 +1,9 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
 import bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './MarketPlace.css';
-import placeholder from '../assets/placeholder.png';
+import MarketPlaceCard from './MarketPlaceCard/MarketPlaceCard';
+import metaData from './DumyData';
 
 class MarketPlace extends React.Component {
   render() {
@@ -11,116 +11,9 @@ class MarketPlace extends React.Component {
       <div className={s.root}>
         <div className={s.container}>
           <div className={s.title}>Marketplace</div>
-          <Row className={s.row}>
-            <Col md={4}>
-              <div className={s.photoPosition}>
-                <img src={placeholder} alt="temp" />
-              </div>
-              <div className={s.content}>
-                <div>Seller: Hossein123</div>
-                <div>Subject: Alfred Hitchcock</div>
-                <div>Photographer: Dan Wynn</div>
-                <div>Minimum bid: 10ETH</div>
-                <div>
-                  {/* <a>
-                    <button className={s.button}>Place Bid</button>
-                  </a> */}
-                  <button className={s.button}>Place Bid</button>
-                </div>
-              </div>
-            </Col>
-
-            <Col md={4}>
-              <div className={s.photoPosition}>
-                <img src={placeholder} alt="temp" />
-              </div>
-              <div className={s.content}>
-                <div>Seller: Hossein123</div>
-                <div>Subject: Pavle Stanic</div>
-                <div>Photographer: Dan Wynn</div>
-                <div>Minimum bid: 20ETH</div>
-                <div>
-                  {/* <a>
-                    <button className={s.button}>Place Bid</button>
-                  </a> */}
-                  <button className={s.button}>Place Bid</button>
-                </div>
-              </div>
-            </Col>
-
-            <Col md={4}>
-              <div className={s.photoPosition}>
-                <img src={placeholder} alt="temp" />
-              </div>
-              <div className={s.content}>
-                <div>Seller: Hossein123</div>
-                <div>Subject: Alexey Dvoryanskiy</div>
-                <div>Photographer: Dan Wynn</div>
-                <div>Minimum bid: 30ETH</div>
-                <div>
-                  {/* <a>
-                    <button className={s.button}>Place Bid</button>
-                  </a> */}
-                  <button className={s.button}>Place Bid</button>
-                </div>
-              </div>
-            </Col>
-          </Row>
-          <Row className={s.row}>
-            <Col md={4}>
-              <div className={s.photoPosition}>
-                <img src={placeholder} alt="temp" />
-              </div>
-              <div className={s.content}>
-                <div>Seller: Hossein123</div>
-                <div>Subject: Dennis Saden</div>
-                <div>Photographer: Dan Wynn</div>
-                <div>Minimum bid: 40ETH</div>
-                <div>
-                  {/* <a>
-                    <button className={s.button}>Place Bid</button>
-                  </a> */}
-                  <button className={s.button}>Place Bid</button>
-                </div>
-              </div>
-            </Col>
-
-            <Col md={4}>
-              <div className={s.photoPosition}>
-                <img src={placeholder} alt="temp" />
-              </div>
-              <div className={s.content}>
-                <div>Seller: Hossein123</div>
-                <div>Subject: Buhdan Milliam</div>
-                <div>Photographer: Dan Wynn</div>
-                <div>Minimum bid: 50ETH</div>
-                <div>
-                  {/* <a>
-                    <button className={s.button}>Place Bid</button>
-                  </a> */}
-                  <button className={s.button}>Place Bid</button>
-                </div>
-              </div>
-            </Col>
-
-            <Col md={4}>
-              <div className={s.photoPosition}>
-                <img src={placeholder} alt="temp" />
-              </div>
-              <div className={s.content}>
-                <div>Seller: Hossein123</div>
-                <div>Subject: Xenia Super</div>
-                <div>Photographer: Dan Wynn</div>
-                <div>Minimum bid: 60ETH</div>
-                <div>
-                  {/* <a>
-                    <button className={s.button}>Place Bid</button>
-                  </a> */}
-                  <button className={s.button}>Place Bid</button>
-                </div>
-              </div>
-            </Col>
-          </Row>
+          <div className={s.marketBody}>
+            {metaData.map(item => <MarketPlaceCard {...item} />)}
+          </div>
         </div>
       </div>
     );
