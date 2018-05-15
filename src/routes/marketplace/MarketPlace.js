@@ -20,7 +20,7 @@ class MarketPlace extends React.Component {
                 <div>Seller: Hossein123</div>
                 <div>Subject: Alfred Hitchcock</div>
                 <div>Photographer: Dan Wynn</div>
-                <div>Minimum bid: 100ETH</div>
+                <div>Minimum bid: 10ETH</div>
                 <div>
                   {/* <a>
                     <button className={s.button}>Place Bid</button>
@@ -36,9 +36,9 @@ class MarketPlace extends React.Component {
               </div>
               <div className={s.content}>
                 <div>Seller: Hossein123</div>
-                <div>Subject: Alfred Hitchcock</div>
+                <div>Subject: Pavle Stanic</div>
                 <div>Photographer: Dan Wynn</div>
-                <div>Minimum bid: 100ETH</div>
+                <div>Minimum bid: 20ETH</div>
                 <div>
                   {/* <a>
                     <button className={s.button}>Place Bid</button>
@@ -54,9 +54,9 @@ class MarketPlace extends React.Component {
               </div>
               <div className={s.content}>
                 <div>Seller: Hossein123</div>
-                <div>Subject: Alfred Hitchcock</div>
+                <div>Subject: Alexey Dvoryanskiy</div>
                 <div>Photographer: Dan Wynn</div>
-                <div>Minimum bid: 100ETH</div>
+                <div>Minimum bid: 30ETH</div>
                 <div>
                   {/* <a>
                     <button className={s.button}>Place Bid</button>
@@ -73,9 +73,9 @@ class MarketPlace extends React.Component {
               </div>
               <div className={s.content}>
                 <div>Seller: Hossein123</div>
-                <div>Subject: Alfred Hitchcock</div>
+                <div>Subject: Dennis Saden</div>
                 <div>Photographer: Dan Wynn</div>
-                <div>Minimum bid: 100ETH</div>
+                <div>Minimum bid: 40ETH</div>
                 <div>
                   {/* <a>
                     <button className={s.button}>Place Bid</button>
@@ -91,9 +91,9 @@ class MarketPlace extends React.Component {
               </div>
               <div className={s.content}>
                 <div>Seller: Hossein123</div>
-                <div>Subject: Alfred Hitchcock</div>
+                <div>Subject: Buhdan Milliam</div>
                 <div>Photographer: Dan Wynn</div>
-                <div>Minimum bid: 100ETH</div>
+                <div>Minimum bid: 50ETH</div>
                 <div>
                   {/* <a>
                     <button className={s.button}>Place Bid</button>
@@ -109,9 +109,9 @@ class MarketPlace extends React.Component {
               </div>
               <div className={s.content}>
                 <div>Seller: Hossein123</div>
-                <div>Subject: Alfred Hitchcock</div>
+                <div>Subject: Xenia Super</div>
                 <div>Photographer: Dan Wynn</div>
-                <div>Minimum bid: 100ETH</div>
+                <div>Minimum bid: 60ETH</div>
                 <div>
                   {/* <a>
                     <button className={s.button}>Place Bid</button>
