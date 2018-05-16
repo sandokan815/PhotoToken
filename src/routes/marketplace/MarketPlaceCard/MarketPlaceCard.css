@@ -1,0 +1,44 @@
+.marketPlatContainer {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: 1%;
+  padding: 1%;
+  border-radius: 5%;
+  background-color: #d1eeeb;
+  -webkit-box-shadow: -1px -1px 13px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px -1px 13px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: -1px -1px 13px 0 rgba(0, 0, 0, 0.75);
+}
+
+.photoPosition {
+  margin: 0 15px;
+}
+
+.photoPosition img {
+  width: 90%;
+}
+
+.content {
+  font-size: 10.5pt;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  margin: 25px 15px;
+}
+
+.button {
+  font-size: 12pt;
+  font-weight: 400;
+  color: rgb(128, 128, 128);
+  line-height: 14.4pt;
+  text-indent: 0;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: rgb(192, 192, 192);
+  border-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
