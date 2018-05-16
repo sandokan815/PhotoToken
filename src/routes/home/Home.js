@@ -18,7 +18,7 @@ class Home extends React.Component {
                 them in any way shape or form, and collect royalty fees forever.
               </div>
               <div className={s.normalTitle}>
-                It&#39s all yours! <span></span>
+                It&#39;s all yours! <span></span>
               </div>
               <div className={s.comment}>
                 Be the highest bidder and earn your exclusive right to whatever
@@ -54,7 +54,7 @@ class Home extends React.Component {
             <div className={s.whatPhotoToken}>
               <div className={s.normalTitle}> What is Photo Token?</div>
               <div className={s.comment}>
-                Photo Token is the world&#39s first decentralized iconic
+                Photo Token is the world&#39;s first decentralized iconic
                 photography ownership auction, leasing, and marketplace.
               </div>
               <div className={s.comment}>
@@ -79,11 +79,11 @@ class Home extends React.Component {
               What is the future of Photo Token?
             </div>
             <div className={s.comment}>
-              Photo Token is the world&#39s first decentralized photography
+              Photo Token is the world&#39;s first decentralized photography
               copyrights platform running on the Ethereum blockchain. You can
               buy, sell or lease your photo copyrights while you can trust that
               the ownership is tracked accurately on the blockchain. Photo
-              Token&#39s primary features are buying and selling iconic images,
+              Token&#39;s primary features are buying and selling iconic images,
               as smart contracts on the Ethereum blockchain. Our secondary
               function will introduce a complex leasing feature allowing
               copyright owners to collect royalties.
