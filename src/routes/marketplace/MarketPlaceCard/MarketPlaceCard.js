@@ -10,6 +10,7 @@ class MarketPlaceCardContainer extends React.Component {
     seller: PropTypes.string.isRequired,
     subject: PropTypes.string.isRequired,
     photographer: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
   };
   render() {
     return (
@@ -21,7 +22,7 @@ class MarketPlaceCardContainer extends React.Component {
           <div>Seller: {this.props.seller}</div>
           <div>Subject: {this.props.subject}</div>
           <div>Photographer: {this.props.photographer}</div>
-          <div>Minimum bid: 10ETH</div>
+          <div>Minimum bid: {this.props.price} ETH</div>
           <div>
             {/* <a>
                     <button className={s.button}>Place Bid</button>

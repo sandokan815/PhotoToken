@@ -1,0 +1,14 @@
+.pagination {
+  display: flex;
+  justify-content: space-around;
+  width: 85%;
+  margin: 5% auto;
+}
+
+.active button {
+  z-index: 2;
+  color: #fff;
+  cursor: default;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
