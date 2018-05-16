@@ -17,8 +17,59 @@
   font-size: 18.75pt;
   font-weight: 300;
   color: rgb(128, 128, 128);
-  line-height: 22.5pt;
   margin: 35px 15px;
+}
+
+.condition {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.sortContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 35%;
+  padding: 1%;
+  border-radius: 3px;
+  -webkit-box-shadow: -1px -1px 13px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px -1px 13px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: -1px -1px 13px 0 rgba(0, 0, 0, 0.75);
+}
+
+.sortContainer p {
+  margin: 0;
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  padding: 1%;
+  border-radius: 3px;
+  -webkit-box-shadow: -1px -1px 13px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px -1px 13px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: -1px -1px 13px 0 rgba(0, 0, 0, 0.75);
+}
+
+.subFilter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sellFilter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.filterContainer p {
+  margin: 0;
 }
 
 .marketBody {
