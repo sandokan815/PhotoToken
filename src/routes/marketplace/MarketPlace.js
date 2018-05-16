@@ -48,7 +48,7 @@ class MarketPlace extends React.Component {
     this.setState({ pageOfItems: items });
   }
   onChangeFilter(e, filter) {
-    this.setState({ [filter]: e.currentTarget.value }, function() {
+    this.setState({ [filter]: e.currentTarget.value }, function sellerFilter() {
       const filtered = metaData.filter(
         c =>
           c.seller.indexOf(this.state.sellerFilter) !== -1 &&
@@ -107,7 +107,7 @@ class MarketPlace extends React.Component {
             <Pagination
               cardItems={this.state.totalItems}
               onChangePage={this.onChangePage}
-              pageSizeNumber={3}
+              pageSizeNumber={6}
             />
           )}
         </div>
