@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../../components/Layout';
-import SinglePhoto from './singlephoto';
+import SinglePhoto from './singlePhoto';
 
 const title = 'Single-Photo';
 
