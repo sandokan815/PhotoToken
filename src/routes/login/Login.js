@@ -26,19 +26,37 @@ class Login extends React.Component {
   }
 
   instantiateContract() {
-    this.state.web3.eth.getAccounts().then(accounts => {
-      this.setState({ storageValue: accounts[0] });
-    });
+    this.state.web3.eth
+      .getAccounts()
+      .then(accounts => {
+        this.setState({
+          storageValue: accounts[0],
+        });
+      })
+      .catch(() => {
+        this.setState({
+          storageValue:
+            'Your MetaMask is locked. Simply open MetaMask and unlock it.',
+        });
+      });
   }
-
   render() {
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <div className={s.label}>
-            <p>Your MetaMask Address is: {this.state.storageValue}</p>
-          </div>
-          <form method="post">
+          <form method="post" action="/register">
+            <div className={s.formGroup}>
+              <label className={s.label} htmlFor="metamask">
+                MetaMask: {this.state.storageValue}
+                <input
+                  className={s.input}
+                  id="metamask"
+                  type="hidden"
+                  name="metamask"
+                  value={this.state.storageValue}
+                />
+              </label>
+            </div>
             <div className={s.formGroup}>
               <label className={s.label} htmlFor="username">
                 Username:
@@ -63,7 +81,7 @@ class Login extends React.Component {
             </div>
             <div className={s.formGroup}>
               <button className={s.button} type="submit">
-                Log in
+                Save account info
               </button>
             </div>
           </form>

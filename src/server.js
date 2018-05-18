@@ -1,4 +1,3 @@
-
 import path from 'path';
 import express from 'express';
 import cookieParser from 'cookie-parser';
@@ -45,6 +44,18 @@ const app = express();
 // -----------------------------------------------------------------------------
 app.set('trust proxy', config.trustProxy);
 
+// accessing DB table
+// app.use(
+//   '/graphql', graphQL(req => ({
+//     schema: require('./data/schema').default,
+//     context: {
+//       user: req.user,
+//       db: new Database(config.db.connection),
+//     },
+//     graphql: true,
+//   })),
+// );
+
 //
 // Register Node.js middleware
 // -----------------------------------------------------------------------------
@@ -63,6 +74,7 @@ app.use(
     getToken: req => req.cookies.id_token,
   }),
 );
+
 // Error handler for express-jwt
 app.use((err, req, res, next) => {
   // eslint-disable-line no-unused-vars
@@ -75,6 +87,11 @@ app.use((err, req, res, next) => {
 });
 
 app.use(passport.initialize());
+
+app.post('/register', (req, res) => {
+  console.log(req.body.metamask);
+  console.log(res);
+});
 
 app.get(
   '/login/facebook',

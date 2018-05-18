@@ -14,21 +14,21 @@ import { makeDir, moveDir, cleanDir } from './lib/fs';
 import run from './run';
 
 // GitHub Pages
-const remote = {
-  name: 'github',
-  url: 'https://github.com/<user>/<repo>.git',
-  branch: 'gh-pages',
-  website: 'https://<user>.github.io/<repo>/',
-  static: true,
-};
+// const remote = {
+//   name: 'github',
+//   url: 'https://github.com/javascriptninja815/phototoken.git',
+//   branch: 'gh-pages',
+//   website: 'https://javascriptninja815.github.io/phototoken/',
+//   static: true,
+// };
 
 // Heroku
-// const remote = {
-//   name: 'heroku',
-//   url: 'https://git.heroku.com/<app>.git',
-//   branch: 'master',
-//   website: 'https://<app>.herokuapp.com',
-// };
+const remote = {
+  name: 'heroku',
+  url: 'https://git.heroku.com/sheltered-earth-29119.git',
+  branch: 'master',
+  website: 'https://sheltered-earth-29119.herokuapp.com',
+};
 
 // Azure Web Apps
 // const remote = {
