@@ -90,7 +90,7 @@ app.use(passport.initialize());
 
 app.post('/register', (req, res) => {
   console.log(req.body.metamask);
-  console.log(res);
+  console.log(res.header);
 });
 
 app.get(
