@@ -29,17 +29,24 @@ class Login extends React.Component {
     this.state.web3.eth
       .getAccounts()
       .then(accounts => {
-        this.setState({
-          storageValue: accounts[0],
-        });
+        if (accounts[0])
+          this.setState({
+            storageValue: accounts[0],
+          });
+        else
+          this.setState({
+            storageValue:
+              'Your MetaMask is locked. Simply open MetaMask and unlock it.',
+          });
       })
       .catch(() => {
         this.setState({
           storageValue:
-            'Your MetaMask is locked. Simply open MetaMask and unlock it.',
+            'Can not detect MetaMask Address. Please install MetaMask extension',
         });
       });
   }
+
   render() {
     return (
       <div className={s.root}>
@@ -47,36 +54,26 @@ class Login extends React.Component {
           <form method="post" action="/register">
             <div className={s.formGroup}>
               <label className={s.label} htmlFor="metamask">
-                MetaMask: {this.state.storageValue}
+                MetaMask Address:
+                <p> {this.state.storageValue} </p>
                 <input
                   className={s.input}
                   id="metamask"
                   type="hidden"
-                  name="metamask"
-                  value={this.state.storageValue}
+                  value={null || this.state.storageValue}
                 />
               </label>
             </div>
             <div className={s.formGroup}>
               <label className={s.label} htmlFor="username">
                 Username:
-                <input
-                  className={s.input}
-                  id="username"
-                  type="text"
-                  name="username"
-                />
+                <input className={s.input} id="username" type="text" />
               </label>
             </div>
             <div className={s.formGroup}>
               <label className={s.label} htmlFor="email">
                 Email:
-                <input
-                  className={s.input}
-                  id="email"
-                  type="email"
-                  name="email"
-                />
+                <input className={s.input} id="email" type="email" />
               </label>
             </div>
             <div className={s.formGroup}>
