@@ -18,6 +18,9 @@ const User = Model.define(
       defaultValue: DataType.UUIDV1,
       primaryKey: true,
     },
+    metaMask: {
+      type: DataType.STRING(255),
+    },
 
     email: {
       type: DataType.STRING(255),
