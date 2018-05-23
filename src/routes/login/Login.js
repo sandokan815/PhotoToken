@@ -36,8 +36,7 @@ class Login extends React.Component {
           });
         else
           this.setState({
-            storageValue:
-              'Your MetaMask is locked. Simply open MetaMask and unlock it.',
+            storageValue: 'Your MetaMask is locked. Please Open MetaMask.',
           });
       })
       .catch(() => {
