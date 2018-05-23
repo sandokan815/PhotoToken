@@ -9,6 +9,7 @@ class Login extends React.Component {
     this.state = {
       storageValue: '',
       web3: null,
+      metaMask: '',
     };
   }
 
@@ -21,7 +22,7 @@ class Login extends React.Component {
         this.instantiateContract();
       })
       .catch(() => {
-        console.log('Error finding web3.'); // when fails
+        console.log('Error finding web3.');
       });
   }
 
@@ -31,7 +32,7 @@ class Login extends React.Component {
       .then(accounts => {
         if (accounts[0])
           this.setState({
-            storageValue: accounts[0],
+            metaMask: accounts[0],
           });
         else
           this.setState({
@@ -41,8 +42,7 @@ class Login extends React.Component {
       })
       .catch(() => {
         this.setState({
-          storageValue:
-            'Can not detect MetaMask Address. Please install MetaMask extension',
+          storageValue: 'Can not detect MetaMask Extension. Please install it',
         });
       });
   }
@@ -51,29 +51,43 @@ class Login extends React.Component {
     return (
       <div className={s.root}>
         <div className={s.container}>
-          <form method="post" action="/register">
+          <form method="post" action="/login">
             <div className={s.formGroup}>
-              <label className={s.label} htmlFor="metamask">
+              <label className={s.label} htmlFor="metaMask">
+                <h3> {this.state.storageValue} </h3>
                 MetaMask Address:
-                <p> {this.state.storageValue} </p>
                 <input
-                  className={s.input}
-                  id="metamask"
-                  type="hidden"
-                  value={null || this.state.storageValue}
+                  className={s.metaMask}
+                  id="metaMask"
+                  type="text"
+                  value={this.state.metaMask}
+                  name="metaMask"
+                  required
                 />
               </label>
             </div>
             <div className={s.formGroup}>
               <label className={s.label} htmlFor="username">
                 Username:
-                <input className={s.input} id="username" type="text" />
+                <input
+                  className={s.input}
+                  id="username"
+                  type="text"
+                  name="username"
+                  required
+                />
               </label>
             </div>
             <div className={s.formGroup}>
               <label className={s.label} htmlFor="email">
                 Email:
-                <input className={s.input} id="email" type="email" />
+                <input
+                  className={s.input}
+                  id="email"
+                  type="email"
+                  name="email"
+                  required
+                />
               </label>
             </div>
             <div className={s.formGroup}>

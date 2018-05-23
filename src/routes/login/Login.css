@@ -8,7 +8,7 @@
 .container {
   margin: 0 auto;
   padding: 0 0 40px;
-  max-width: 380px;
+  max-width: 480px;
 }
 
 .formGroup {
@@ -36,6 +36,25 @@
   font-size: 18px;
   line-height: 1.3333333;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.metaMask {
+  display: block;
+  box-sizing: border-box;
+  margin: 5px 0 0;
+  padding: 10px 16px;
+  width: 100%;
+  height: 46px;
+  outline: 0;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  background: #fff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  color: #616161;
+  font-size: 18px;
+  line-height: 1.3333333;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  pointer-events: none;
 }
 
 .input:focus {
